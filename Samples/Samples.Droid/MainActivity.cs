@@ -6,7 +6,6 @@ using Android.OS;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
-
 namespace Samples.Droid
 {
     [Activity(
@@ -22,12 +21,16 @@ namespace Samples.Droid
             UserDialogs.Init(() => (Activity)Forms.Context);
             base.OnCreate(bundle);
             Forms.Init(this, bundle);
+            Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, bundle);
             this.LoadApplication(new App());
         }
 
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
-            => Plugin.Permissions.PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        {
+            Plugin.Permissions.PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
     }
 }
 

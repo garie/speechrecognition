@@ -14,7 +14,7 @@
     <FileAlignment>512</FileAlignment>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -49,18 +49,18 @@
     <Compile Include="SpeechRecognitionListener.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Plugin.SpeechRecognition.Abstractions\Plugin.SpeechRecognition.Abstractions.csproj">
-      <Project>{2ce7418b-b8fd-4271-ab90-3045532d7089}</Project>
-      <Name>Plugin.SpeechRecognition.Abstractions</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="NETStandard.Library">
-      <Version>1.6.1</Version>
+      <Version>2.0.3</Version>
     </PackageReference>
     <PackageReference Include="Plugin.Permissions">
-      <Version>2.0.1</Version>
+      <Version>3.0.0.12</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Plugin.SpeechRecognition.Abstractions\Plugin.SpeechRecognition.Abstractions.csproj">
+      <Project>{2CE7418B-B8FD-4271-AB90-3045532D7089}</Project>
+      <Name>Plugin.SpeechRecognition.Abstractions</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="..\Plugin.SpeechRecognition.Shared\Plugin.SpeechRecognition.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

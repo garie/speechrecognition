@@ -29,9 +29,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Speech Recognition</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.acrapps.speechrecog</string>
-	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>co.rememorate.speechdemo</string>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Icon-60@2x.png</string>
@@ -50,12 +48,14 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>2.0.0</string>
 	<key>UIMainStoryboardFile~ipad</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
-	<string>Speech Recognition</string>
+	<string>Rememorate Speech Recognition Demo</string>
 	<key>CFBundleExecutable</key>
 	<string></string>
+	<key>CFBundleVersion</key>
+	<string>2</string>
 </dict>
 </plist>
