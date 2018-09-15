@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>RememorateFork.Plugin.SpeechRecognition</id>
+    <version>2.0.0-beta3</version>
+    <authors>Allan Ritchie, Christi Schneider</authors>
+    <owners>Christi Schneider</owners>
+    <licenseUrl>https://github.com/garie/speechrecognition/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/garie/speechrecognition</projectUrl>
+    <iconUrl>https://github.com/garie/speechrecognition/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Speech Recognition that allows for continuous dictation, phrases, or quick confirmations.
+
+Supported Platforms
+- iOS 10+
+- Android
+- .NET Standard 2.0</description>
+    <releaseNotes>https://github.com/garie/speechrecognition/blob/master/CHANGELOG.md</releaseNotes>
+    <copyright>Copyright 2018 Christi Schneider</copyright>
+    <tags>xamarin xam.pcl speech recognition</tags>
+    <dependencies>
+      <dependency id="System.Reactive" version="4.0.0" />
+      <dependency id="NETStandard.Library" version="2.0.3" />
+      <dependency id="Plugin.Permissions" version="3.0.0.12" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- PCL -->
+    <file src="..\Plugin.SpeechRecognition\bin\Debug\netstandard2.0\Plugin.SpeechRecognition.*" target="lib\netstandard2.0" />
+
+    <!-- android -->
+    <file src="..\Plugin.SpeechRecognition.Android\bin\Debug\Plugin.SpeechRecognition.*" target="lib\MonoAndroid10" />
+
+    <!-- ios -->
+    <file src="..\Plugin.SpeechRecognition.iOS\bin\Debug\Plugin.SpeechRecognition.*" target="lib\Xamarin.iOS10" />
+
+  </files>
+</package>

@@ -198,7 +198,7 @@
       <IsWatchApp>false</IsWatchApp>
     </ProjectReference>
     <ProjectReference Include="..\..\Samples.Core\Samples.Core.csproj">
-      <Project>{590b9d16-853a-47ce-8864-d4afd558817e}</Project>
+      <Project>{5EE32D28-ABF7-462D-A8B2-5EA14DED6762}</Project>
       <Name>Samples.Core</Name>
     </ProjectReference>
   </ItemGroup>

@@ -5,11 +5,14 @@
         <RootNamespace>Plugin.SpeechRecognition</RootNamespace>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <ReleaseVersion>2.0.0</ReleaseVersion>
+        <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="System.Reactive" Version="4.0.0" />
-      <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2" />
+        <PackageReference Include="System.Reactive" Version="4.0.0" />
+        <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2">
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
     </ItemGroup>
 
 </Project>

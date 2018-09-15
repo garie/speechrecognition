@@ -2,7 +2,7 @@
 
 _Easy to use cross platform speech recognition (speech to text) plugin for Xamarin & UWP_
 
-[![NuGet](https://img.shields.io/nuget/v/Plugin.SpeechRecognition.svg?maxAge=2592000)](https://www.nuget.org/packages/Plugin.SpeechRecognition/)
+[![NuGet](https://img.shields.io/nuget/v/RememorateFork.Plugin.SpeechRecognition.svg?maxAge=2592000)](https://www.nuget.org/packages/RememorateFork.Plugin.SpeechRecognition)
 
 This was forked from [https://github.com/aritchie/speechrecognition](https://github.com/aritchie/speechrecognition).
 It now lives at [https://github.com/garie/speechrecognition](https://github.com/garie/speechrecognition).

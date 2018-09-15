@@ -3,9 +3,8 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-        <PackOnBuild>true</PackOnBuild>
         <PackageId>RememorateFork.Plugin.SpeechDialogs</PackageId>
-        <PackageVersion>2.0.0-beta1</PackageVersion>
+        <PackageVersion>2.0.0-beta3</PackageVersion>
         <Authors>Allan Ritchie, Christi Schneider</Authors>
         <PackageIconUrl>https://github.com/garie/speechrecognition/icon.png</PackageIconUrl>
         <NeutralLanguage>en-US</NeutralLanguage>
@@ -29,7 +28,9 @@ Supported Platforms
         <PackageReference Include="System.Reactive" Version="4.0.0" />
         <PackageReference Include="Xam.Plugins.TextToSpeech" Version="4.0.0.7" />
         <PackageReference Include="Acr.UserDialogs" Version="7.0.1" />
-        <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2" />
+        <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2">
+            <ExcludeAssets>all</ExcludeAssets>
+        </PackageReference>
     </ItemGroup>
 
     <ItemGroup>

@@ -7,7 +7,6 @@ using Plugin.SpeechRecognition;
 using Plugin.TextToSpeech;
 using Plugin.TextToSpeech.Abstractions;
 
-
 namespace Plugin.SpeechDialogs
 {
     public class SpeechDialogs : ISpeechDialogs

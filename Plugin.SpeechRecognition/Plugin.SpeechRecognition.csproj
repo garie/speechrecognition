@@ -5,7 +5,7 @@
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <PackOnBuild>true</PackOnBuild>
         <PackageId>RememorateFork.Plugin.SpeechRecognition</PackageId>
-        <PackageVersion>2.0.0-beta1</PackageVersion>
+        <PackageVersion>2.0.0-beta3</PackageVersion>
         <Authors>Allan Ritchie, Christi Schneider</Authors>
         <PackageIconUrl>https://github.com/garie/speechrecognition/icon.png</PackageIconUrl>
         <NeutralLanguage>en-US</NeutralLanguage>
@@ -23,6 +23,7 @@ Supported Platforms
 - Android
 - .NET Standard 2.0</Description>
         <ReleaseVersion>2.0.0</ReleaseVersion>
+        <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -34,8 +35,12 @@ Supported Platforms
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="System.Reactive" Version="4.0.0" />
-        <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2" />
+        <PackageReference Include="System.Reactive" Version="4.0.0">
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2">
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
     </ItemGroup>
 
     <ItemGroup>

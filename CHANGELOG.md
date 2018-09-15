@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0-beta3] - 2018-09-15
+
+- Play around with package references to try to troubleshoot to some strange behavior in Xamarin build
+
+## [2.0.0-beta1] - 2018-09-15
+
 ### Changed
 
 - Project has had no activity for a long time and I need a newer version of a dependency, so Christi Schneider has forked the original

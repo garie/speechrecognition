@@ -50,6 +50,7 @@
   <ItemGroup>
     <PackageReference Include="Plugin.Permissions">
       <Version>3.0.0.12</Version>
+      <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
   <Import Project="..\Plugin.SpeechRecognition.Shared\Plugin.SpeechRecognition.Shared.projitems" Label="Shared" />
