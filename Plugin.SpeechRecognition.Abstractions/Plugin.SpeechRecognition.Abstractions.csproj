@@ -4,10 +4,12 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <RootNamespace>Plugin.SpeechRecognition</RootNamespace>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <ReleaseVersion>2.0.0</ReleaseVersion>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="System.Reactive" Version="4.0.0" />
+      <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2" />
     </ItemGroup>
 
 </Project>
